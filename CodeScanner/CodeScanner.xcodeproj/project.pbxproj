@@ -11,6 +11,8 @@
 		F46B51D227B2D65900E9E18F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46B51D127B2D65900E9E18F /* Assets.xcassets */; };
 		F46B51D527B2D65900E9E18F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46B51D427B2D65900E9E18F /* Preview Assets.xcassets */; };
 		F46B51DC27B2D6C400E9E18F /* CodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B51DB27B2D6C400E9E18F /* CodeScannerView.swift */; };
+		F46B51DE27B3D0C800E9E18F /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B51DD27B3D0C800E9E18F /* ScannerViewController.swift */; };
+		F46B51E027B3D65E00E9E18F /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B51DF27B3D65E00E9E18F /* CameraError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		F46B51D127B2D65900E9E18F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F46B51D427B2D65900E9E18F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F46B51DB27B2D6C400E9E18F /* CodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScannerView.swift; sourceTree = "<group>"; };
+		F46B51DD27B3D0C800E9E18F /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		F46B51DF27B3D65E00E9E18F /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,10 @@
 			children = (
 				F46B51CD27B2D65600E9E18F /* CodeScannerApp.swift */,
 				F46B51DB27B2D6C400E9E18F /* CodeScannerView.swift */,
+				F46B51DD27B3D0C800E9E18F /* ScannerViewController.swift */,
 				F46B51D127B2D65900E9E18F /* Assets.xcassets */,
 				F46B51D327B2D65900E9E18F /* Preview Content */,
+				F46B51DF27B3D65E00E9E18F /* CameraError.swift */,
 			);
 			path = CodeScanner;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F46B51DC27B2D6C400E9E18F /* CodeScannerView.swift in Sources */,
+				F46B51DE27B3D0C800E9E18F /* ScannerViewController.swift in Sources */,
 				F46B51CE27B2D65600E9E18F /* CodeScannerApp.swift in Sources */,
+				F46B51E027B3D65E00E9E18F /* CameraError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
