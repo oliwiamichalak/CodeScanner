@@ -13,6 +13,7 @@
 		F46B51DC27B2D6C400E9E18F /* CodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B51DB27B2D6C400E9E18F /* CodeScannerView.swift */; };
 		F46B51DE27B3D0C800E9E18F /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B51DD27B3D0C800E9E18F /* ScannerViewController.swift */; };
 		F46B51E027B3D65E00E9E18F /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B51DF27B3D65E00E9E18F /* CameraError.swift */; };
+		F46B51E227B3D8CE00E9E18F /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B51E127B3D8CE00E9E18F /* ScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		F46B51DB27B2D6C400E9E18F /* CodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScannerView.swift; sourceTree = "<group>"; };
 		F46B51DD27B3D0C800E9E18F /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		F46B51DF27B3D65E00E9E18F /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
+		F46B51E127B3D8CE00E9E18F /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +57,13 @@
 		F46B51CC27B2D65600E9E18F /* CodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				F46B51E527B3D91700E9E18F /* Enums */,
+				F46B51E427B3D90500E9E18F /* Coordinator */,
+				F46B51E327B3D8E200E9E18F /* ViewController */,
 				F46B51CD27B2D65600E9E18F /* CodeScannerApp.swift */,
 				F46B51DB27B2D6C400E9E18F /* CodeScannerView.swift */,
-				F46B51DD27B3D0C800E9E18F /* ScannerViewController.swift */,
 				F46B51D127B2D65900E9E18F /* Assets.xcassets */,
 				F46B51D327B2D65900E9E18F /* Preview Content */,
-				F46B51DF27B3D65E00E9E18F /* CameraError.swift */,
 			);
 			path = CodeScanner;
 			sourceTree = "<group>";
@@ -71,6 +74,30 @@
 				F46B51D427B2D65900E9E18F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F46B51E327B3D8E200E9E18F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F46B51DD27B3D0C800E9E18F /* ScannerViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		F46B51E427B3D90500E9E18F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F46B51E127B3D8CE00E9E18F /* ScannerView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F46B51E527B3D91700E9E18F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				F46B51DF27B3D65E00E9E18F /* CameraError.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +174,7 @@
 				F46B51DE27B3D0C800E9E18F /* ScannerViewController.swift in Sources */,
 				F46B51CE27B2D65600E9E18F /* CodeScannerApp.swift in Sources */,
 				F46B51E027B3D65E00E9E18F /* CameraError.swift in Sources */,
+				F46B51E227B3D8CE00E9E18F /* ScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-protocol ScanerViewControllerDelegate: AnyObject {
+protocol ScannerViewControllerDelegate: AnyObject {
     func didFind(barcode: String)
     func didErrorSurface(error: CameraError)
 }
@@ -18,16 +18,31 @@ final class ScannerViewController: UIViewController {
     // MARK: Public properities
     let captureSession = AVCaptureSession()
     var previewLayer: AVCaptureVideoPreviewLayer?
-    weak var delegate: ScanerViewControllerDelegate?
+    weak var delegate: ScannerViewControllerDelegate?
 
     // MARK: Lifecycle
-    init(scannerDelegate: ScanerViewControllerDelegate) {
+    init(scannerDelegate: ScannerViewControllerDelegate) {
         super.init(nibName: nil, bundle: nil)
         self.delegate = scannerDelegate
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupCaptureSession()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        guard let previewLayer = previewLayer else {
+            delegate?.didErrorSurface(error: .invalidDeviceInput)
+            return
+        }
+
+        previewLayer.frame = view.layer.bounds
     }
 
     // MARK: Private functions
